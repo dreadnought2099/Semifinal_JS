@@ -34,7 +34,7 @@ body {
   list-style-type: none;
   font-size: 15px;
   font-weight: bold;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 #sidebar ul li {
@@ -45,6 +45,7 @@ body {
 #sidebar ul li a {
   text-decoration: none;
   display: block;
+  padding: 10px;
 }
 
 #content {
@@ -87,8 +88,17 @@ body {
   display: none;
 }
 
+#sidebar ul li a:hover {
+  background-color: #80af81;
+  color: #f2eed7;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
 #sidebar ul li a#logout-btn:hover {
-  color: #ff6666;
+  background-color: #80af81;
+  border-radius: 5px;
+  color: #f2eed7;
 }
 
 footer {
