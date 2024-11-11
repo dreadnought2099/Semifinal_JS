@@ -1,19 +1,3 @@
-// document
-//   .getElementById("createAccountForm")
-//   .addEventListener("submit", function (event) {
-//     event.preventDefault();
-
-//     const password = document.getElementById("password").value;
-//     const confirmPassword = document.getElementById("confirmPassword").value;
-
-//     if (password !== confirmPassword) {
-//       alert("Passwords do not match!");
-//     } else {
-//       alert("Account created successfully!");
-//       window.location.href = "../index.html";
-//     }
-//   });
-
 document
   .getElementById("createAccountForm")
   .addEventListener("submit", function (event) {
@@ -43,5 +27,5 @@ document
     localStorage.setItem("user_" + username, JSON.stringify(userData));
 
     alert("Account created successfully!");
-    window.location.href = "../index.html"; // Redirect to login page
+    window.location.href = "../index.html";
   });
