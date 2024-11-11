@@ -15,6 +15,7 @@ function validateLogin(event) {
     localStorage.setItem("loggedInUser", username);
     alert("Welcome " + username + "!");
     window.location.href = "sidebar/home.html";
+    return true;
   }
 
   // Check if username exists in localStorage users
